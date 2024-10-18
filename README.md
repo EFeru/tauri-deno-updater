@@ -54,3 +54,15 @@ This repository contains a description on how to use the Tauri v2 Updater with a
     }
   }
 ```
+
+## Example test urls for Deno project
+- Get the latest release information:
+```
+https://my-deno-project.deno.dev/windows/x86_64/v0.1.0
+```
+
+- Observe the url returned by the request above, should be something like this:
+```
+https://my-deno-project.deno.dev/download/{{id}}/{{my_app_name}}
+```
+This is the link Tauri will use to download the asset and perform the update.
